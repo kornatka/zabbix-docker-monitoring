@@ -12,7 +12,7 @@ WORKDIR /root
 
 RUN \
    apt-get -qq update  1>/dev/null && \
-   apt-get -qq --assume-yes install git subversion automake autoconf gcc make pkg-config libpcre3-dev 1>/dev/null
+   apt-get -qq --assume-yes install vim git subversion automake autoconf gcc make pkg-config libpcre3-dev 1>/dev/null
 
 RUN \
    git clone -q https://github.com/monitoringartist/zabbix-docker-monitoring && \
